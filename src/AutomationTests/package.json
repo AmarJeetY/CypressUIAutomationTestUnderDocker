@@ -1,0 +1,33 @@
+{
+  "name": "webui-testing-using-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "This project is to show how to test web UI using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test:ui:headless:electron": "cypress run --headless --spec \"**/*.feature\"",
+    "test:ui:headless:chrome": "cypress run --headless --browser chrome --spec \"**/*.feature\"",
+    "test:ui:headed:chrome": "cypress run --headed --browser chrome --spec \"**/*.feature\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmarjeetY"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "Amarjeet Yelwande",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^6.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {    
+    "cypress-xpath": "^1.6.1"
+  }
+}

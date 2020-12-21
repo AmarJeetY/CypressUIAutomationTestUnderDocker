@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webserver:
+    image: node
+    container_name: node
+    build: .
+    ports:
+      - 8091:8091
+    command: "npm run serve"
+
